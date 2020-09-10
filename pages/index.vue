@@ -60,13 +60,13 @@ export default Vue.extend({})
 
 .degree {
   font-weight: bold;
-  color: #0e84b7;
+  color: #0eb741;
 }
 
 img.me {
   height: 284px;
   width: 284px;
-  border: 1px solid #0eb741;
+  border: 1px solid #0e84b7;
 }
 
 .bio-short {
@@ -100,8 +100,8 @@ p {
 @screen lg {
   img.me {
     margin-right: 1.5rem;
-    height: 344px;
-    width: 344px;
+    height: 334px;
+    width: 334px;
   }
 
   p {
