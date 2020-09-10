@@ -1,21 +1,24 @@
 <template>
   <div class="container">
-    <div>
-      <img src="/me.jpg" alt="Brad Fitzwater's Picture" class="me" />
+    <div class="item">
+      <img src="/me.jpg" alt="Brad Fitzwater's Picture" class="me rounded-full" />
     </div>
-    <div>
-      <div>
-        <p>
-          👋, my name is Brad Fitzwater. I am a Software Engineer living in Raleigh, NC. 
-          I was born and raised in Charleston, WV and graduated with a degree in 
-          Computer Science from Marshall University. I enjoy tinkering with web things, 
-          drinking coffee and beer, reading old books, and listening noisy rock albums.
+    <div class="item">
+      <div class="bio-short">
+        <p class="pb-4">
+          Hi, my name is <span class="name">Brad Fitzwater</span>. 
         </p>
-        <p>
+        <p class="pb-4">
+          I am a <span class="profession">Software Engineer</span> living in Raleigh, NC.
+          I was born and raised in Charleston, WV and graduated with a degree in
+          <span class="degree">Computer Science</span> from Marshall University. I enjoy tinkering with web 
+          things, drinking coffee and beer, reading old books, and listening noisy music.
+        </p>
+        <p class="pb-4">
           I am a husband and a father of twins.
         </p>
-        <p>
-          This site will, most likely, always be a work in progress. 🍻
+        <p class="pb-4">
+          This site will, most likely, always be a work in progress. 👋
         </p>
       </div>
     </div>
@@ -29,44 +32,80 @@ export default Vue.extend({})
 </script>
 
 <style lang="postcss">
-.container {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.2;
-}
+/**
+  rust b7410e
+  cyan b70e84
+  green 0eb741
+  blue 0e84b7
+*/
 
 .container {
-  @apply min-h-screen flex flex-col justify-center items-center mx-auto;
+  @apply min-h-screen flex flex-col items-center mx-auto;
+}
+
+.item {
+  @apply w-full flex justify-center;
+  margin-top: 2rem;
+}
+
+.name {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.profession {
+  font-weight: bold;
+  color: #b7410e;
+}
+
+.degree {
+  font-weight: bold;
+  color: #0e84b7;
+}
+
+img.me {
+  height: 284px;
+  width: 284px;
+  border: 1px solid #0eb741;
+}
+
+.bio-short {
+  padding: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 @screen md {
   .container {
     @apply min-h-screen flex flex-row justify-center items-center mx-auto;
   }
-}
 
-.container > div {
-  @apply w-1/2;
-  @apply flex justify-center;
-}
+  .item {
+    @apply w-1/2 flex justify-end;
+  }
 
-img.me {
-  @apply rounded-full;
-  height: 244px;
-  width: 244px;
-}
-
-@screen md {
   img.me {
-    @apply rounded-full;
-    height: 384px;
-    width: 384px;
+    margin-right: 1.5rem;
+    height: 324px;
+    width: 324px;
+  }
+
+  p {
+    font-size: 1.3rem;
   }
 }
 
-p {
-  @apply pb-2 pt-2;
-  font-size: 1.5rem;
+@screen lg {
+  img.me {
+    margin-right: 1.5rem;
+    height: 344px;
+    width: 344px;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
 }
 </style>
