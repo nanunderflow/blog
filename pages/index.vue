@@ -66,7 +66,7 @@ export default Vue.extend({})
 img.me {
   height: 284px;
   width: 284px;
-  border: 1px solid #0e84b7;
+  border: 2px solid #0e84b7;
 }
 
 .bio-short {
