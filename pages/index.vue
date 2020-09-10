@@ -1,25 +1,22 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">blog</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+      <img src="/me.jpg" alt="Brad Fitzwater's Picture" class="me" />
+    </div>
+    <div>
+      <div>
+        <p>
+          👋, my name is Brad Fitzwater. I am a Software Engineer living in Raleigh, NC. 
+          I was born and raised in Charleston, WV and graduated with a degree in 
+          Computer Science from Marshall University. I enjoy tinkering with web things, 
+          drinking coffee and beer, reading old books, and listening noisy rock albums.
+        </p>
+        <p>
+          I am a husband and a father of twins.
+        </p>
+        <p>
+          This site will, most likely, always be a work in progress. 🍻
+        </p>
       </div>
     </div>
   </div>
@@ -31,40 +28,45 @@ import Vue from 'vue'
 export default Vue.extend({})
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
+<style lang="postcss">
 .container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.2;
 }
-*/
+
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @apply min-h-screen flex flex-col justify-center items-center mx-auto;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+@screen md {
+  .container {
+    @apply min-h-screen flex flex-row justify-center items-center mx-auto;
+  }
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.container > div {
+  @apply w-1/2;
+  @apply flex justify-center;
 }
 
-.links {
-  padding-top: 15px;
+img.me {
+  @apply rounded-full;
+  height: 244px;
+  width: 244px;
+}
+
+@screen md {
+  img.me {
+    @apply rounded-full;
+    height: 384px;
+    width: 384px;
+  }
+}
+
+p {
+  @apply pb-2 pt-2;
+  font-size: 1.5rem;
 }
 </style>
