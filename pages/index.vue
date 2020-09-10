@@ -87,7 +87,7 @@ p {
   }
 
   img.me {
-    margin-right: 1.5rem;
+    margin-right: 3rem;
     height: 324px;
     width: 324px;
   }
@@ -99,7 +99,6 @@ p {
 
 @screen lg {
   img.me {
-    margin-right: 1.5rem;
     height: 334px;
     width: 334px;
   }
