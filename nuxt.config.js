@@ -18,6 +18,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'theme-color', content: '#0e84b7' },
       {
         hid: 'description',
         name: 'description',
