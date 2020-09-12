@@ -105,4 +105,8 @@ h2 {
   margin-bottom: 2rem;
 }
 
+.footnotes hr {
+  display: none;
+}
+
 </style>

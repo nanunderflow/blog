@@ -6,7 +6,7 @@ published: Sep 11, 2020
 
 
 ## An Introduction
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum tempor suscipit. Nullam fermentum viverra augue sit amet vehicula. Nulla a varius erat. Quisque a ligula quis turpis tristique sodales eget a eros. Pellentesque vel elit nec purus vulputate tempus ac at nunc. Nullam volutpat scelerisque tellus. Pellentesque posuere gravida sapien, faucibus iaculis lectus ultricies ut. Praesent vel justo id libero gravida convallis. Proin nec dolor dui. Nunc id mauris nec neque gravida tincidunt.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit[^1]. Mauris bibendum tempor suscipit. Nullam fermentum viverra augue sit amet vehicula. Nulla a varius erat. Quisque a ligula quis turpis tristique sodales eget a eros. Pellentesque vel elit nec purus vulputate tempus ac at nunc. Nullam volutpat scelerisque tellus. Pellentesque posuere gravida sapien, faucibus iaculis lectus ultricies ut. Praesent vel justo id libero gravida convallis. Proin nec dolor dui. Nunc id mauris nec neque gravida tincidunt.
 
 Morbi faucibus, nisl at iaculis ultrices, quam nisi ultrices velit, sit amet sollicitudin velit elit nec augue. Suspendisse congue tortor urna. Fusce tempus felis magna, placerat mollis lorem aliquam quis. Ut sed laoreet elit. Suspendisse at nunc et justo laoreet consequat eget vel metus. Aliquam consectetur risus eu facilisis sagittis. Fusce eget enim maximus urna varius vestibulum sed nec sem. Vestibulum mi nisl, auctor quis euismod in, tincidunt vitae tellus. Integer eleifend commodo lacus, eu interdum turpis auctor id. Sed tincidunt nulla at turpis ullamcorper, eu auctor tortor varius. Integer blandit nunc sed dolor sollicitudin posuere. Praesent ligula orci, mattis id consectetur sed, lacinia quis lorem. Proin hendrerit iaculis mi, a placerat est iaculis non. Ut purus purus, iaculis vitae congue a, facilisis at sem.
 
@@ -29,3 +29,7 @@ Donec malesuada erat nisi. Nullam laoreet lorem non lorem convallis molestie. Qu
 
 ## In Conclusion
 Donec malesuada erat nisi. Nullam laoreet lorem non lorem convallis molestie. Quisque maximus vehicula quam vel aliquet. Donec libero orci, pellentesque non orci at, posuere semper libero. Suspendisse sagittis ante id mauris rutrum suscipit. Nam sit amet ullamcorper lacus. Cras quam nunc, convallis vitae dolor et, suscipit ornare libero.
+
+## References
+
+[^1]: This is the first footnote.
